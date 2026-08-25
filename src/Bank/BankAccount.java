@@ -18,7 +18,7 @@ public class BankAccount implements Serializable {
 	
 	
 	public BankAccount(String name, double balance, double min_balance) throws Exception {
-    if (balance < min_balance) {
+    if (balance > min_balance) {
         throw new Exception("Initial balance cannot be less than the minimum required balance: " + min_balance);
     }
     this.name = name;
