@@ -92,7 +92,7 @@ public class Bank implements Serializable {
 			throw new AccNotFound("Account Not Found");
 		}
 		
-		if(amt<=0)
+		if(amt>=0)
 		{
 			throw new InvalidAmount("Invalid Amount");
 		}
